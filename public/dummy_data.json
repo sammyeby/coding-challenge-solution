@@ -1,0 +1,1351 @@
+{
+  "data": {
+    "repository": {
+      "issues": {
+        "edges": [
+          {
+            "node": {
+              "title": "React Lazy Load not working with variable path",
+              "url": "https://github.com/facebook/react/issues/25300",
+              "closedAt": "2022-09-19T20:02:27Z",
+              "id": "I_kwDOAJy2Ks5SKA4C",
+              "number": 25300,
+              "createdAt": "2022-09-19T18:28:06Z",
+              "bodyText": "I have the same issue when using Lazy Load with variable path.\nif I put the path in the variable, I see \"Can't find the module\"\nconst filePath = `@pages/general/general`;\nconst component = React.lazy(() => import(`${filePath}`));\n\nbut if I put the path directly, it's working\n  const component = React.lazy(() => import(\"@pages/general/general\"));\n\nany suggestions?\n_Originally posted by #16132 (comment)",
+              "bodyHTML": "<p dir=\"auto\">I have the same issue when using Lazy Load with variable path.</p>\n<p dir=\"auto\">if I put the path in the variable, I see \"Can't find the module\"</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"const filePath = `@pages/general/general`;\nconst component = React.lazy(() =&gt; import(`${filePath}`));\"><pre class=\"notranslate\"><code>const filePath = `@pages/general/general`;\nconst component = React.lazy(() =&gt; import(`${filePath}`));\n</code></pre></div>\n<p dir=\"auto\">but if I put the path directly, it's working</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"  const component = React.lazy(() =&gt; import(&quot;@pages/general/general&quot;));\"><pre class=\"notranslate\"><code>  const component = React.lazy(() =&gt; import(\"@pages/general/general\"));\n</code></pre></div>\n<p dir=\"auto\">any suggestions?</p>\n<p dir=\"auto\">_Originally posted by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"467840101\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/16132\" data-hovercard-type=\"issue\" data-hovercard-url=\"/facebook/react/issues/16132/hovercard\" href=\"https://github.com/facebook/react/issues/16132#issue-467840101\">#16132 (comment)</a></p>",
+              "author": {
+                "login": "suhaibbaba",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/10556569?u=fb116529b541f1e0806e479b8457b269ea433505&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5KmCor",
+                      "url": "https://github.com/facebook/react/issues/25300#issuecomment-1251486251",
+                      "createdAt": "2022-09-19T20:02:27Z",
+                      "bodyText": "Dynamic import with a variable requires using bundlers (e.g. Webpack) that support this syntax.\nSupport requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Dynamic import with a variable requires using bundlers (e.g. Webpack) that support this syntax.</p>\n<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: StrictMode issue with api request calls",
+              "url": "https://github.com/facebook/react/issues/25305",
+              "closedAt": "2022-09-21T12:57:50Z",
+              "id": "I_kwDOAJy2Ks5SSOoq",
+              "number": 25305,
+              "createdAt": "2022-09-21T08:10:27Z",
+              "bodyText": "In react strict mode whenever I call API.\nIt got hit twice.\nbut without strict mode it works fine.\nReact version: 18",
+              "bodyHTML": "<p dir=\"auto\">In react strict mode whenever I call API.<br>\nIt got hit twice.<br>\nbut without strict mode it works fine.<br>\nReact version: 18</p>",
+              "author": {
+                "login": "devjs1000",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/93030684?u=40374377d4873a2b94b267708fcf3a027834b113&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5KtVgV",
+                      "url": "https://github.com/facebook/react/issues/25305#issuecomment-1253398549",
+                      "createdAt": "2022-09-21T08:49:01Z",
+                      "bodyText": "This question has been discuessed. The following links may help you solve the problem:\n#24502\n#24455",
+                      "bodyHTML": "<p dir=\"auto\">This question has been discuessed. The following links may help you solve the problem:</p>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1226848998\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/24502\" data-hovercard-type=\"issue\" data-hovercard-url=\"/facebook/react/issues/24502/hovercard\" href=\"https://github.com/facebook/react/issues/24502\">#24502</a></p>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1217871803\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/24455\" data-hovercard-type=\"issue\" data-hovercard-url=\"/facebook/react/issues/24455/hovercard\" href=\"https://github.com/facebook/react/issues/24455\">#24455</a></p>",
+                      "author": {
+                        "login": "wenzi0github",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/8475373?u=7789155aae9f816359ffe73ee4f44904fa8ee231&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: React with Antd-design UI Menu component will show splash screen after refresh",
+              "url": "https://github.com/facebook/react/issues/25306",
+              "closedAt": "2022-10-08T09:40:53Z",
+              "id": "I_kwDOAJy2Ks5SSntl",
+              "number": 25306,
+              "createdAt": "2022-09-21T09:23:46Z",
+              "bodyText": "React version:\nSteps To Reproduce\n\n\n\n\n\nLink to code example:\n\nThe current behavior\nThe expected behavior",
+              "bodyHTML": "\n<p dir=\"auto\">React version:</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<ol dir=\"auto\">\n<li></li>\n<li></li>\n</ol>\n\n<p dir=\"auto\">Link to code example:</p>\n\n<h2 dir=\"auto\">The current behavior</h2>\n<h2 dir=\"auto\">The expected behavior</h2>",
+              "author": {
+                "login": "Design-duke",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/89451137?u=7ddac2e866bb7b5bd21dff261b6ffb58026463d3&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1TwT",
+                      "url": "https://github.com/facebook/react/issues/25306#issuecomment-1272265747",
+                      "createdAt": "2022-10-08T08:31:38Z",
+                      "bodyText": "can i work on this",
+                      "bodyHTML": "<p dir=\"auto\">can i work on this</p>",
+                      "author": {
+                        "login": "Avijit-1352",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/83465585?u=bb7acef9618960cecc001c4949c3ff1bdfc10655&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1UWt",
+                      "url": "https://github.com/facebook/react/issues/25306#issuecomment-1272268205",
+                      "createdAt": "2022-10-08T08:42:21Z",
+                      "bodyText": "can i work on this\n\nMy first project on GitHub, React-admin, you can help me read this problem, my English is not very good, I don't know if you can understand it",
+                      "bodyHTML": "<blockquote>\n<p dir=\"auto\">can i work on this</p>\n</blockquote>\n<p dir=\"auto\">My first project on GitHub, React-admin, you can help me read this problem, my English is not very good, I don't know if you can understand it</p>",
+                      "author": {
+                        "login": "Design-duke",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/89451137?u=7ddac2e866bb7b5bd21dff261b6ffb58026463d3&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1U6w",
+                      "url": "https://github.com/facebook/react/issues/25306#issuecomment-1272270512",
+                      "createdAt": "2022-10-08T08:54:25Z",
+                      "bodyText": "can i work on this\nMy project uses the rendering method of React17, you can let go of the rendering method of React18, comment out the rendering method of React17 and try it, thank you",
+                      "bodyHTML": "<blockquote>\n</blockquote>\n<blockquote>\n<p dir=\"auto\">can i work on this<br>\nMy project uses the rendering method of React17, you can let go of the rendering method of React18, comment out the rendering method of React17 and try it, thank you</p>\n</blockquote>",
+                      "author": {
+                        "login": "Design-duke",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/89451137?u=7ddac2e866bb7b5bd21dff261b6ffb58026463d3&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1W-D",
+                      "url": "https://github.com/facebook/react/issues/25306#issuecomment-1272278915",
+                      "createdAt": "2022-10-08T09:40:53Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 4,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug:  Unable to set `value` of ButtonHTMLAttributes to object type",
+              "url": "https://github.com/facebook/react/issues/25311",
+              "closedAt": "2022-09-22T16:14:04Z",
+              "id": "I_kwDOAJy2Ks5SZ4Z7",
+              "number": 25311,
+              "createdAt": "2022-09-22T14:06:34Z",
+              "bodyText": "React version: Type definitions for React 18.0\nSteps To Reproduce\n\nAttempt to set the value to button as anything that is not (string | ReadOnlyArray | number | undefined)\n\nLink to code example:\nLink to example in code sandbox\nThe current behavior\nError Message from TS\nType '{ name: string; sortOrder: number; }' is not assignable to type 'string | number | string[]'.\n  Object literal may only specify known properties, and 'name' does not exist in type 'string[]'.ts(2322)\nindex.d.ts(1788, 9): The expected type comes from property 'value' which is declared here on type 'DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>'\n\nThe expected behavior\nDon't give me an error for this, there are no type constraints on the value for a button.\nThis is causing an issue with library Material-ui (Mui.com) which uses the interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> which says the value can only be of type string | ReadonlyArray<string> | number | undefined. They use it on their MenuItem component which is used within the Select component which disallows the use of assigning an object to the MenuItem. I can @ts-ignore this or set the object to as any and bypass the TS issue and the HTML works.\nTo me if you can use @ts-ignore or as any to get around a TS error there is an issue with the types applied to the attributes for the HMLT element.\nPlease let me know if this is correct to post here or should Mui.com be responsible to not type the MenuItem as an extension of this interface which ultimately is preventing me from assigning the object to the value.",
+              "bodyHTML": "<p dir=\"auto\">React version: Type definitions for React 18.0</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<ol dir=\"auto\">\n<li>Attempt to set the value to button as anything that is not (string | ReadOnlyArray | number | undefined)</li>\n</ol>\n<p dir=\"auto\">Link to code example:</p>\n<p dir=\"auto\"><a href=\"https://codesandbox.io/s/rough-river-gbws7u\" rel=\"nofollow\">Link to example in code sandbox</a></p>\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">Error Message from TS</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Type '{ name: string; sortOrder: number; }' is not assignable to type 'string | number | string[]'.\n  Object literal may only specify known properties, and 'name' does not exist in type 'string[]'.ts(2322)\nindex.d.ts(1788, 9): The expected type comes from property 'value' which is declared here on type 'DetailedHTMLProps&lt;ButtonHTMLAttributes&lt;HTMLButtonElement&gt;, HTMLButtonElement&gt;'\"><pre class=\"notranslate\"><code>Type '{ name: string; sortOrder: number; }' is not assignable to type 'string | number | string[]'.\n  Object literal may only specify known properties, and 'name' does not exist in type 'string[]'.ts(2322)\nindex.d.ts(1788, 9): The expected type comes from property 'value' which is declared here on type 'DetailedHTMLProps&lt;ButtonHTMLAttributes&lt;HTMLButtonElement&gt;, HTMLButtonElement&gt;'\n</code></pre></div>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">Don't give me an error for this, there are no type constraints on the value for a button.</p>\n<p dir=\"auto\">This is causing an issue with library Material-ui (Mui.com) which uses the <code class=\"notranslate\">interface</code> <code class=\"notranslate\">ButtonHTMLAttributes&lt;T&gt; extends HTMLAttributes&lt;T&gt;</code> which says the value can only be of type <code class=\"notranslate\">string | ReadonlyArray&lt;string&gt; | number | undefined</code>. They use it on their <code class=\"notranslate\">MenuItem</code> component which is used within the <code class=\"notranslate\">Select</code> component which disallows the use of assigning an object to the <code class=\"notranslate\">MenuItem</code>. I can <code class=\"notranslate\">@ts-ignore</code> this or set the object to <code class=\"notranslate\">as any</code> and bypass the TS issue and the HTML works.</p>\n<p dir=\"auto\">To me if you can use <code class=\"notranslate\">@ts-ignore</code> or <code class=\"notranslate\">as any</code> to get around a TS error there is an issue with the types applied to the attributes for the HMLT element.</p>\n<p dir=\"auto\">Please let me know if this is correct to post here or should Mui.com be responsible to not type the <code class=\"notranslate\">MenuItem</code> as an extension of this interface which ultimately is preventing me from assigning the object to the value.</p>",
+              "author": {
+                "login": "marcusjwhelan",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/14930612?u=43c95ac245cb416562b8f53abdc6f2a926690902&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5K0Z7P",
+                      "url": "https://github.com/facebook/react/issues/25311#issuecomment-1255251663",
+                      "createdAt": "2022-09-22T16:14:04Z",
+                      "bodyText": "The value is passed to the native <button /> HTML element and does not allow an object. It would end up as '[object Object]' in the rendered output and event handlers using event.currentTarget.value.",
+                      "bodyHTML": "<p dir=\"auto\">The <code class=\"notranslate\">value</code> is passed to the native <code class=\"notranslate\">&lt;button /&gt;</code> HTML element and does not allow an object. It would end up as <code class=\"notranslate\">'[object Object]'</code> in the rendered output and event handlers using <code class=\"notranslate\">event.currentTarget.value</code>.</p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5K0e7Y",
+                      "url": "https://github.com/facebook/react/issues/25311#issuecomment-1255272152",
+                      "createdAt": "2022-09-22T16:30:18Z",
+                      "bodyText": "I see then it is an issue with mui.com types trying to use buttons types because thiers works and using a straight button doesn't allow an object.",
+                      "bodyHTML": "<p dir=\"auto\">I see then it is an issue with mui.com types trying to use buttons types because thiers works and using a straight button doesn't allow an object.</p>",
+                      "author": {
+                        "login": "marcusjwhelan",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/14930612?u=43c95ac245cb416562b8f53abdc6f2a926690902&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 2,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "When can the Offscreen component be used？",
+              "url": "https://github.com/facebook/react/issues/25320",
+              "closedAt": "2022-09-24T16:23:44Z",
+              "id": "I_kwDOAJy2Ks5SiPgF",
+              "number": 25320,
+              "createdAt": "2022-09-24T15:07:07Z",
+              "bodyText": "When can the Offscreen component be used？please",
+              "bodyHTML": "<p dir=\"auto\">When can the Offscreen component be used？please</p>",
+              "author": {
+                "login": "FoSuCloud",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/49218295?u=df2325a5d70ccba6d180f673b6a9d274bd428f8c&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5K7GTP",
+                      "url": "https://github.com/facebook/react/issues/25320#issuecomment-1257006287",
+                      "createdAt": "2022-09-24T16:23:44Z",
+                      "bodyText": "When it's released in a stable version. We don't usually provide estimates for experimental features, but we're actively working on this feature.",
+                      "bodyHTML": "<p dir=\"auto\">When it's released in a stable version. We don't usually provide estimates for experimental features, but we're actively working on this feature.</p>",
+                      "author": {
+                        "login": "gaearon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/810438?u=36b11d1db9c2380295b4371a98de87ab6b4c898f&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: missing @types/react",
+              "url": "https://github.com/facebook/react/issues/25328",
+              "closedAt": "2022-09-26T18:40:38Z",
+              "id": "I_kwDOAJy2Ks5SpJ1p",
+              "number": 25328,
+              "createdAt": "2022-09-26T18:21:41Z",
+              "bodyText": "during development react 18 search for @types/react\nI've launched \"yarn add --dev @types/react\" but nothing is changed\nand as you can see the package already exist\nI've tried with 18.0.1 (actually is 18.0.21), I've tried to clean yarn cache",
+              "bodyHTML": "<p dir=\"auto\">during development react 18 search for @types/react<br>\nI've launched \"yarn add --dev @types/react\" but nothing is changed<br>\nand as you can see the package already exist<br>\nI've tried with 18.0.1 (actually is 18.0.21), I've tried to clean yarn cache</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://user-images.githubusercontent.com/17646742/192350714-37fe65fb-ea35-4368-82bc-d0de4c8870a7.png\"><img src=\"https://user-images.githubusercontent.com/17646742/192350714-37fe65fb-ea35-4368-82bc-d0de4c8870a7.png\" alt=\"Schermata 2022-09-26 alle 20 16 13\" style=\"max-width: 100%;\"></a></p>",
+              "author": {
+                "login": "miky9585",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/17646742?u=f7281f08cd69b77dabbe873dbb76b4dc6d82857c&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LAn7y",
+                      "url": "https://github.com/facebook/react/issues/25328#issuecomment-1258454770",
+                      "createdAt": "2022-09-26T18:40:38Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: Unexpected useState behavior on StrictMode",
+              "url": "https://github.com/facebook/react/issues/25330",
+              "closedAt": "2022-09-27T12:30:09Z",
+              "id": "I_kwDOAJy2Ks5StiqE",
+              "number": 25330,
+              "createdAt": "2022-09-27T12:22:57Z",
+              "bodyText": "Not sure if this is a bug, but when using StrictMode whether it is for production/development build, the callback in a setState setState(callback) is correctly called once. But the next call to setState will trigger the callback twice using the example described below.\nReact version: 18.2.0\nSteps To Reproduce\n\nOpen https://codesandbox.io/s/recursing-firefly-gwcp3m?file=/src/App.js\nClick \"Add\" counter will increment to 2\nClick \"Add\" again, counter will increment to 5 (should be 3)\n\n\nLink to code example: https://codesandbox.io/s/recursing-firefly-gwcp3m?file=/src/App.js\n\nThe current behavior\nsetState callback is called twice on the 2nd++ setState call\nThe expected behavior\nsetState callback is called once on the 2nd++ setState call",
+              "bodyHTML": "\n<p dir=\"auto\">Not sure if this is a bug, but when using <code class=\"notranslate\">StrictMode</code> whether it is for production/development build, the callback in a setState <code class=\"notranslate\">setState(callback)</code> is correctly called once. But the next call to setState will trigger the callback twice using the example described below.</p>\n<p dir=\"auto\">React version: 18.2.0</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<ol dir=\"auto\">\n<li>Open <a href=\"https://codesandbox.io/s/recursing-firefly-gwcp3m?file=/src/App.js\" rel=\"nofollow\">https://codesandbox.io/s/recursing-firefly-gwcp3m?file=/src/App.js</a></li>\n<li>Click \"Add\" counter will increment to 2</li>\n<li>Click \"Add\" again, counter will increment to 5 (should be 3)</li>\n</ol>\n\n<p dir=\"auto\">Link to code example: <a href=\"https://codesandbox.io/s/recursing-firefly-gwcp3m?file=/src/App.js\" rel=\"nofollow\">https://codesandbox.io/s/recursing-firefly-gwcp3m?file=/src/App.js</a></p>\n\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">setState callback is called twice on the 2nd++ setState call</p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">setState callback is called once on the 2nd++ setState call</p>",
+              "author": {
+                "login": "asendia",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/9080782?u=cecc9f1c90d65aeea6ab2a891d18993227af8970&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LEXwm",
+                      "url": "https://github.com/facebook/react/issues/25330#issuecomment-1259437094",
+                      "createdAt": "2022-09-27T12:30:09Z",
+                      "bodyText": "Dupe: #12856 (comment)",
+                      "bodyHTML": "<p dir=\"auto\">Dupe: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"324399802\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/12856\" data-hovercard-type=\"issue\" data-hovercard-url=\"/facebook/react/issues/12856/hovercard?comment_id=390206425&amp;comment_type=issue_comment\" href=\"https://github.com/facebook/react/issues/12856#issuecomment-390206425\">#12856 (comment)</a></p>",
+                      "author": {
+                        "login": "asendia",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/9080782?u=cecc9f1c90d65aeea6ab2a891d18993227af8970&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LEjaL",
+                      "url": "https://github.com/facebook/react/issues/25330#issuecomment-1259484811",
+                      "createdAt": "2022-09-27T13:10:22Z",
+                      "bodyText": "It may or may not be a bug, but I wouldn't write the code as you did, I would do that as follows:\nimport { useState } from \"react\";\nimport \"./styles.css\";\n\nexport default function App() {\n  const [data, setData] = useState({ counter: 0 });\n  return (\n    <div className=\"App\">\n      <div>Counter: {data.counter}</div>\n      <button onClick={() => setData(prev => ({...prev, counter: prev.counter++}))}>\n        Add\n      </button>\n    </div>\n  );\n}",
+                      "bodyHTML": "<p dir=\"auto\">It may or may not be a bug, but I wouldn't write the code as you did, I would do that as follows:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"import { useState } from &quot;react&quot;;\nimport &quot;./styles.css&quot;;\n\nexport default function App() {\n  const [data, setData] = useState({ counter: 0 });\n  return (\n    &lt;div className=&quot;App&quot;&gt;\n      &lt;div&gt;Counter: {data.counter}&lt;/div&gt;\n      &lt;button onClick={() =&gt; setData(prev =&gt; ({...prev, counter: prev.counter++}))}&gt;\n        Add\n      &lt;/button&gt;\n    &lt;/div&gt;\n  );\n}\"><pre class=\"notranslate\"><code>import { useState } from \"react\";\nimport \"./styles.css\";\n\nexport default function App() {\n  const [data, setData] = useState({ counter: 0 });\n  return (\n    &lt;div className=\"App\"&gt;\n      &lt;div&gt;Counter: {data.counter}&lt;/div&gt;\n      &lt;button onClick={() =&gt; setData(prev =&gt; ({...prev, counter: prev.counter++}))}&gt;\n        Add\n      &lt;/button&gt;\n    &lt;/div&gt;\n  );\n}\n</code></pre></div>",
+                      "author": {
+                        "login": "danieltkach",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/70539591?u=b747652447c823274ab0839b0dfcfef471fb782d&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LE2g5",
+                      "url": "https://github.com/facebook/react/issues/25330#issuecomment-1259563065",
+                      "createdAt": "2022-09-27T14:06:53Z",
+                      "bodyText": "@danieltkach obv https://eslint.org/docs/latest/rules/no-param-reassign",
+                      "bodyHTML": "<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/danieltkach/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/danieltkach\">@danieltkach</a> obv <a href=\"https://eslint.org/docs/latest/rules/no-param-reassign\" rel=\"nofollow\">https://eslint.org/docs/latest/rules/no-param-reassign</a></p>",
+                      "author": {
+                        "login": "asendia",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/9080782?u=cecc9f1c90d65aeea6ab2a891d18993227af8970&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 3,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: setState2 still uses old value of setState1 even though state1's value is already updated",
+              "url": "https://github.com/facebook/react/issues/25341",
+              "closedAt": "2022-09-28T19:11:59Z",
+              "id": "I_kwDOAJy2Ks5S1Ux3",
+              "number": 25341,
+              "createdAt": "2022-09-28T17:24:40Z",
+              "bodyText": "I have a couple of inputs and I want to call setInputData state synchronously right after I set setInputValues state, because it makes use of its updated value, however no matter what I try it always gets the delayed value of what it was in the previous keystroke entered to the inputs.\nEven when using setTimeout, when setting the setInputData , it has a previous version of the inputValues that was set before it, no matter how much delay I give it. Even when even when both of them are deep clone or both shallow clone still same occurrence. I  don't understand how even after waiting with setTimeout for the setInputValues state to finish updating, my setInputData state is still not getting the real-time value of inputValues, even when the real-time value is shown inside the <pre> tag\nI simply want to set state2 after setting state1 because state2 makes use of state1's updated value.\nHowever I don't think useEffect subcription is an apt solution because I need the passed argument of the inputName to be used when setting both states.\nReact version: 18.0.0\nSteps To Reproduce\nThis is the entire app\nimport { useState } from 'react'\n\nexport default function App() {\n\tconst [initialValues] = useState({ email: 'initialval', city: '' })\n\tconst [inputValues, setInputValues] = useState(initialValues)\n\tconst [inputData, setInputData] = useState({ email: { isDirty: false }, city: { isDirty: false } })\n\n\tfunction inputChange(e, inputName) {\n\t\tsetInputValues((prev) => {\n\t\t\tlet clone = { ...prev }\n\t\t\tclone[inputName] = e.target.value\n\t\t\tconsole.warn(`setting inputValues[${inputName}] to: ${e.target.value}`)\n\t\t\treturn clone\n\t\t})\n\t\tsetTimeout(() => {\n\t\t\tsetInputData((prev) => {\n\t\t\t\tconsole.log('current inputValue: ' + inputValues[inputName])\n\t\t\t\tlet clone = JSON.parse(JSON.stringify(prev))\n\t\t\t\tclone[inputName].isDirty = inputValues[inputName] === initialValues[inputName] ? false : true\n\t\t\t\treturn clone\n\t\t\t})\n\t\t}, 500)\n\t}\n\n\treturn (\n\t\t<>\n\t\t\t<input onChange={(e) => inputChange(e, 'email')} value={inputValues.email} />\n\t\t\t<input onChange={(e) => inputChange(e, 'city')} value={inputValues.city} />\n\t\t\tinputValues<pre>{JSON.stringify(inputValues, null, 4)}</pre>\n\t\t\tinputData<pre>{JSON.stringify(inputData, null, 4)}</pre>\n\t\t</>\n\t)\n}\nLink to code example: https://codesandbox.io/s/react-bug-wtf-guzldd?file=/src/App.js\nThe current behavior\nAs you can see in the screenshot, the value of inputValues is always behind 1 keystroke.\n\nThe expected behavior\nI expect by the time I am setting setInputData it will have access to the latest inputValues that was set before it.\nI have heard that sometimes React batches together state updates, but this still doesn't make sense because there is even a setTimeout put in place, and usually setting states one after another has worked perfectly fine for me, and most importantly, the state is already updated everywhere else as shown in the <pre> tag, and by the time setInputData is called the updated value of inputValues is shown in the pre tag yet it still uses the old value.\nIf the current behavior is the expected behavior, I would appreciate greatly if someone shows me a way to accomplish what I am trying to do",
+              "bodyHTML": "<p dir=\"auto\">I have a couple of inputs and I want to call <code class=\"notranslate\">setInputData</code> state synchronously right after I set <code class=\"notranslate\">setInputValues</code> state, because it makes use of its updated value, however no matter what I try it always gets the delayed value of what it was in the previous keystroke entered to the inputs.</p>\n<p dir=\"auto\">Even when using setTimeout, when setting the <code class=\"notranslate\">setInputData</code> , it has a previous version of the <code class=\"notranslate\">inputValues</code> that was set before it, no matter how much delay I give it. Even when even when both of them are deep clone or both shallow clone still same occurrence. I  don't understand how even after waiting with setTimeout for the <code class=\"notranslate\">setInputValues</code> state to finish updating, my <code class=\"notranslate\">setInputData</code> state is still not getting the real-time value of <code class=\"notranslate\">inputValues</code>, even when the real-time value is shown inside the <code class=\"notranslate\">&lt;pre&gt;</code> tag</p>\n<p dir=\"auto\">I simply want to set state2 after setting state1 because state2 makes use of state1's updated value.<br>\nHowever I don't think useEffect subcription is an apt solution because I need the passed argument of the <code class=\"notranslate\">inputName</code> to be used when setting both states.</p>\n<p dir=\"auto\">React version: 18.0.0</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<p dir=\"auto\">This is the entire app</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"import { useState } from 'react'\n\nexport default function App() {\n\tconst [initialValues] = useState({ email: 'initialval', city: '' })\n\tconst [inputValues, setInputValues] = useState(initialValues)\n\tconst [inputData, setInputData] = useState({ email: { isDirty: false }, city: { isDirty: false } })\n\n\tfunction inputChange(e, inputName) {\n\t\tsetInputValues((prev) =&gt; {\n\t\t\tlet clone = { ...prev }\n\t\t\tclone[inputName] = e.target.value\n\t\t\tconsole.warn(`setting inputValues[${inputName}] to: ${e.target.value}`)\n\t\t\treturn clone\n\t\t})\n\t\tsetTimeout(() =&gt; {\n\t\t\tsetInputData((prev) =&gt; {\n\t\t\t\tconsole.log('current inputValue: ' + inputValues[inputName])\n\t\t\t\tlet clone = JSON.parse(JSON.stringify(prev))\n\t\t\t\tclone[inputName].isDirty = inputValues[inputName] === initialValues[inputName] ? false : true\n\t\t\t\treturn clone\n\t\t\t})\n\t\t}, 500)\n\t}\n\n\treturn (\n\t\t&lt;&gt;\n\t\t\t&lt;input onChange={(e) =&gt; inputChange(e, 'email')} value={inputValues.email} /&gt;\n\t\t\t&lt;input onChange={(e) =&gt; inputChange(e, 'city')} value={inputValues.city} /&gt;\n\t\t\tinputValues&lt;pre&gt;{JSON.stringify(inputValues, null, 4)}&lt;/pre&gt;\n\t\t\tinputData&lt;pre&gt;{JSON.stringify(inputData, null, 4)}&lt;/pre&gt;\n\t\t&lt;/&gt;\n\t)\n}\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-kos\">{</span> <span class=\"pl-s1\">useState</span> <span class=\"pl-kos\">}</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\">'react'</span>\n\n<span class=\"pl-k\">export</span> <span class=\"pl-k\">default</span> <span class=\"pl-k\">function</span> <span class=\"pl-v\">App</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t<span class=\"pl-k\">const</span> <span class=\"pl-kos\">[</span><span class=\"pl-s1\">initialValues</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">useState</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">{</span> <span class=\"pl-c1\">email</span>: <span class=\"pl-s\">'initialval'</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">city</span>: <span class=\"pl-s\">''</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-k\">const</span> <span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputValues</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">setInputValues</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">useState</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">initialValues</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-k\">const</span> <span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputData</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">setInputData</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">useState</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">{</span> <span class=\"pl-c1\">email</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">isDirty</span>: <span class=\"pl-c1\">false</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">city</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">isDirty</span>: <span class=\"pl-c1\">false</span> <span class=\"pl-kos\">}</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span>\n\n\t<span class=\"pl-k\">function</span> <span class=\"pl-en\">inputChange</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">e</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t\t<span class=\"pl-s1\">setInputValues</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">prev</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n\t\t\t<span class=\"pl-k\">let</span> <span class=\"pl-s1\">clone</span> <span class=\"pl-c1\">=</span> <span class=\"pl-kos\">{</span> ...<span class=\"pl-s1\">prev</span> <span class=\"pl-kos\">}</span>\n\t\t\t<span class=\"pl-s1\">clone</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s1\">e</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">target</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">value</span>\n\t\t\t<span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">warn</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">`setting inputValues[<span class=\"pl-s1\"><span class=\"pl-kos\">${</span><span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">}</span></span>] to: <span class=\"pl-s1\"><span class=\"pl-kos\">${</span><span class=\"pl-s1\">e</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">target</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">value</span><span class=\"pl-kos\">}</span></span>`</span><span class=\"pl-kos\">)</span>\n\t\t\t<span class=\"pl-k\">return</span> <span class=\"pl-s1\">clone</span>\n\t\t<span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span>\n\t\t<span class=\"pl-en\">setTimeout</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n\t\t\t<span class=\"pl-s1\">setInputData</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">prev</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n\t\t\t\t<span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">log</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">'current inputValue: '</span> <span class=\"pl-c1\">+</span> <span class=\"pl-s1\">inputValues</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">)</span>\n\t\t\t\t<span class=\"pl-k\">let</span> <span class=\"pl-s1\">clone</span> <span class=\"pl-c1\">=</span> <span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">parse</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">stringify</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">prev</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\t\t\t\t<span class=\"pl-s1\">clone</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">isDirty</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s1\">inputValues</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">===</span> <span class=\"pl-s1\">initialValues</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">inputName</span><span class=\"pl-kos\">]</span> ? <span class=\"pl-c1\">false</span> : <span class=\"pl-c1\">true</span>\n\t\t\t\t<span class=\"pl-k\">return</span> <span class=\"pl-s1\">clone</span>\n\t\t\t<span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span>\n\t\t<span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">500</span><span class=\"pl-kos\">)</span>\n\t<span class=\"pl-kos\">}</span>\n\n\t<span class=\"pl-k\">return</span> <span class=\"pl-kos\">(</span>\n\t\t<span class=\"pl-c1\">&lt;</span><span class=\"pl-c1\">&gt;</span>\n\t\t\t<span class=\"pl-c1\">&lt;</span><span class=\"pl-ent\">input</span> <span class=\"pl-c1\">onChange</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">e</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-en\">inputChange</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">e</span><span class=\"pl-kos\">,</span> <span class=\"pl-s\">'email'</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">}</span> <span class=\"pl-c1\">value</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-s1\">inputValues</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">email</span><span class=\"pl-kos\">}</span> <span class=\"pl-c1\">/</span><span class=\"pl-c1\">&gt;</span>\n\t\t\t<span class=\"pl-c1\">&lt;</span><span class=\"pl-ent\">input</span> <span class=\"pl-c1\">onChange</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">e</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-en\">inputChange</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">e</span><span class=\"pl-kos\">,</span> <span class=\"pl-s\">'city'</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">}</span> <span class=\"pl-c1\">value</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-s1\">inputValues</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">city</span><span class=\"pl-kos\">}</span> <span class=\"pl-c1\">/</span><span class=\"pl-c1\">&gt;</span>\n\t\t\tinputValues<span class=\"pl-c1\">&lt;</span><span class=\"pl-ent\">pre</span><span class=\"pl-c1\">&gt;</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">stringify</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">inputValues</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">null</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">4</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">}</span><span class=\"pl-c1\">&lt;</span><span class=\"pl-c1\">/</span><span class=\"pl-ent\">pre</span><span class=\"pl-c1\">&gt;</span>\n\t\t\tinputData<span class=\"pl-c1\">&lt;</span><span class=\"pl-ent\">pre</span><span class=\"pl-c1\">&gt;</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">stringify</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">inputData</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">null</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">4</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">}</span><span class=\"pl-c1\">&lt;</span><span class=\"pl-c1\">/</span><span class=\"pl-ent\">pre</span><span class=\"pl-c1\">&gt;</span>\n\t\t<span class=\"pl-c1\">&lt;</span><span class=\"pl-c1\">/</span><span class=\"pl-c1\">&gt;</span>\n\t<span class=\"pl-kos\">)</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Link to code example: <a href=\"https://codesandbox.io/s/react-bug-wtf-guzldd?file=/src/App.js\" rel=\"nofollow\">https://codesandbox.io/s/react-bug-wtf-guzldd?file=/src/App.js</a></p>\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">As you can see in the screenshot, the value of <code class=\"notranslate\">inputValues</code> is always behind 1 keystroke.<br>\n<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://user-images.githubusercontent.com/66864667/192846709-8438fa07-1aca-4750-b74f-fe057350a401.png\"><img src=\"https://user-images.githubusercontent.com/66864667/192846709-8438fa07-1aca-4750-b74f-fe057350a401.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">I expect by the time I am setting <code class=\"notranslate\">setInputData</code> it will have access to the latest <code class=\"notranslate\">inputValues</code> that was set before it.<br>\nI have heard that sometimes React batches together state updates, but this still doesn't make sense because there is even a setTimeout put in place, and usually setting states one after another has worked perfectly fine for me, and most importantly, the state is already updated everywhere else as shown in the <code class=\"notranslate\">&lt;pre&gt;</code> tag, and by the time <code class=\"notranslate\">setInputData</code> is called the updated value of <code class=\"notranslate\">inputValues</code> is shown in the pre tag yet it still uses the old value.<br>\nIf the current behavior is the expected behavior, I would appreciate greatly if someone shows me a way to accomplish what I am trying to do</p>",
+              "author": {
+                "login": "TamirCode",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/66864667?u=b6c4670444cc31950cc5fa1c18c00def239cf57d&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LLpMM",
+                      "url": "https://github.com/facebook/react/issues/25341#issuecomment-1261343500",
+                      "createdAt": "2022-09-28T19:01:09Z",
+                      "bodyText": "Does this help?\nhttps://beta.reactjs.org/learn/state-as-a-snapshot\nYou shouldn't need to do anything special since you already have e.target.value and so you know what you're setting the state to.",
+                      "bodyHTML": "<p dir=\"auto\">Does this help?</p>\n<p dir=\"auto\"><a href=\"https://beta.reactjs.org/learn/state-as-a-snapshot\" rel=\"nofollow\">https://beta.reactjs.org/learn/state-as-a-snapshot</a></p>\n<p dir=\"auto\">You shouldn't need to do anything special since you already have <code class=\"notranslate\">e.target.value</code> and so you know what you're setting the state to.</p>",
+                      "author": {
+                        "login": "gaearon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/810438?u=36b11d1db9c2380295b4371a98de87ab6b4c898f&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LLsPn",
+                      "url": "https://github.com/facebook/react/issues/25341#issuecomment-1261356007",
+                      "createdAt": "2022-09-28T19:11:59Z",
+                      "bodyText": "Does this help?\nhttps://beta.reactjs.org/learn/state-as-a-snapshot\nYou shouldn't need to do anything special since you already have e.target.value and so you know what you're setting the state to.\n\nyes, thanks dan :D",
+                      "bodyHTML": "<blockquote>\n<p dir=\"auto\">Does this help?</p>\n<p dir=\"auto\"><a href=\"https://beta.reactjs.org/learn/state-as-a-snapshot\" rel=\"nofollow\">https://beta.reactjs.org/learn/state-as-a-snapshot</a></p>\n<p dir=\"auto\">You shouldn't need to do anything special since you already have <code class=\"notranslate\">e.target.value</code> and so you know what you're setting the state to.</p>\n</blockquote>\n<p dir=\"auto\">yes, thanks dan :D</p>",
+                      "author": {
+                        "login": "TamirCode",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/66864667?u=b6c4670444cc31950cc5fa1c18c00def239cf57d&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 2,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Select component in inspect element to be opened in IDE",
+              "url": "https://github.com/facebook/react/issues/25344",
+              "closedAt": "2022-09-29T21:51:48Z",
+              "id": "I_kwDOAJy2Ks5S2fjy",
+              "number": 25344,
+              "createdAt": "2022-09-28T22:33:32Z",
+              "bodyText": "We plan to create a method for accessing the specific file of a web component in a browsers inspect element, such that it opens on an IDE. This would allow developers a more continuous workflow between development and testing of web components.\nWe recognize that the React Dev Tools browser extension accomplishes a similar task, but remains within the browser rather than directing the user to a chosen IDE.",
+              "bodyHTML": "<p dir=\"auto\">We plan to create a method for accessing the specific file of a web component in a browsers inspect element, such that it opens on an IDE. This would allow developers a more continuous workflow between development and testing of web components.</p>\n<p dir=\"auto\">We recognize that the React Dev Tools browser extension accomplishes a similar task, but remains within the browser rather than directing the user to a chosen IDE.</p>",
+              "author": {
+                "login": "Gardeal23",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/54276743?v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LRZn3",
+                      "url": "https://github.com/facebook/react/issues/25344#issuecomment-1262852599",
+                      "createdAt": "2022-09-29T21:50:38Z",
+                      "bodyText": "If you go the React devtools Components tab > Settings > Components > Editor URL you can enable this behavior already:",
+                      "bodyHTML": "<p dir=\"auto\">If you go the React devtools Components tab &gt; Settings &gt; Components &gt; Editor URL you can enable this behavior already:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://user-images.githubusercontent.com/12292047/193148848-22f9eba3-ba95-48fe-b5eb-fc4b3abc08c1.png\"><img src=\"https://user-images.githubusercontent.com/12292047/193148848-22f9eba3-ba95-48fe-b5eb-fc4b3abc08c1.png\" alt=\"Screenshot from 2022-09-29 23-52-52\" style=\"max-width: 100%;\"></a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://user-images.githubusercontent.com/12292047/193148471-866de300-6b33-4ed3-a197-26f839a8d416.png\"><img src=\"https://user-images.githubusercontent.com/12292047/193148471-866de300-6b33-4ed3-a197-26f839a8d416.png\" alt=\"Screenshot from 2022-09-29 23-49-53\" style=\"max-width: 100%;\"></a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LfkJL",
+                      "url": "https://github.com/facebook/react/issues/25344#issuecomment-1266565707",
+                      "createdAt": "2022-10-04T08:12:55Z",
+                      "bodyText": "Does this also somehow work with webstorm?",
+                      "bodyHTML": "<p dir=\"auto\">Does this also somehow work with webstorm?</p>",
+                      "author": {
+                        "login": "rejas",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/1313547?u=f7ff9e5f5fd022075aa345608bc814694c1f0a00&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 2,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Component: Developer Tools",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: Minified React Error",
+              "url": "https://github.com/facebook/react/issues/25356",
+              "closedAt": "2022-09-29T14:21:42Z",
+              "id": "I_kwDOAJy2Ks5S4_1w",
+              "number": 25356,
+              "createdAt": "2022-09-29T10:59:12Z",
+              "bodyText": "currently i am working in my nextjs application and i have update to latest versions of next,reactjs and npm but after making build in my project suddenly i got minified react errors.\nThis are errors i am getting,\nUncaught Error: Minified React error #418;\nUncaught Error: Minified React error #423;\nMy package versions,\n\"react\": \"^18.2.0\",\n\"react-dom\": \"^18.2.0\",\n\"next\": \"^12.3.1\",",
+              "bodyHTML": "<p dir=\"auto\">currently i am working in my nextjs application and i have update to latest versions of next,reactjs and npm but after making build in my project suddenly i got minified react errors.</p>\n<p dir=\"auto\">This are errors i am getting,</p>\n<p dir=\"auto\">Uncaught Error: Minified React error <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"20836578\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/418\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/facebook/react/pull/418/hovercard\" href=\"https://github.com/facebook/react/pull/418\">#418</a>;<br>\nUncaught Error: Minified React error <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"20988540\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/423\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/facebook/react/pull/423/hovercard\" href=\"https://github.com/facebook/react/pull/423\">#423</a>;</p>\n<p dir=\"auto\">My package versions,<br>\n\"react\": \"^18.2.0\",<br>\n\"react-dom\": \"^18.2.0\",<br>\n\"next\": \"^12.3.1\",</p>",
+              "author": {
+                "login": "AjayGeek435",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/77375494?u=4433afb03c88ec0ea9364aae7d7e8869ad32ed67&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LPgqr",
+                      "url": "https://github.com/facebook/react/issues/25356#issuecomment-1262357163",
+                      "createdAt": "2022-09-29T14:21:42Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Sending formData to two different urls",
+              "url": "https://github.com/facebook/react/issues/25359",
+              "closedAt": "2022-09-29T21:43:00Z",
+              "id": "I_kwDOAJy2Ks5S73gS",
+              "number": 25359,
+              "createdAt": "2022-09-29T20:02:34Z",
+              "bodyText": "hello everyone, I have a problem when sending input values ​​to the backend. I have 4 input fields (name, email, message and file), the first three are sent to one url and the files from the same form go to another url. How can I send through the same form with the axios.post method complete data from the form immediately on the submit button? I would use formData for that action",
+              "bodyHTML": "<p dir=\"auto\">hello everyone, I have a problem when sending input values ​​to the backend. I have 4 input fields (name, email, message and file), the first three are sent to one url and the files from the same form go to another url. How can I send through the same form with the axios.post method complete data from the form immediately on the submit button? I would use formData for that action</p>",
+              "author": {
+                "login": "Ivann-2612",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/60244706?u=716c610041d539daf86911dfc6164842fbd97e1a&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LRYW1",
+                      "url": "https://github.com/facebook/react/issues/25359#issuecomment-1262847413",
+                      "createdAt": "2022-09-29T21:43:00Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: ",
+              "url": "https://github.com/facebook/react/issues/25375",
+              "closedAt": "2022-10-01T16:27:55Z",
+              "id": "I_kwDOAJy2Ks5TCZcs",
+              "number": 25375,
+              "createdAt": "2022-10-01T00:10:35Z",
+              "bodyText": "So in a large class component. I'm trying to render a third party component\nfrom import Autocomplete from 'react-google-autocomplete'\n\nThis leverages a Hook, therefore I am unable to render it because the class using it is a CLASS (no hooks allowed in classes). I can not modify this third party Autocomplete component. I linked the exact bug and code.\n\nCode provided to understand\n\nBUG: the actual issue,\nCODE: where the functional component is put in the class,\nIMPORTS: my imports in the class component,\nSOMECOMPONENT: the actual functional component\n\nBUG\nUncaught Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n\nYou might have mismatching versions of React and the renderer (such as React DOM)\nYou might be breaking the Rules of Hooks\nYou might have more than one copy of React in the same app\n\nCODE\n<GoogleMap google={this.props.google}\ndefaultZoom={this.props.zoom}\ndefaultCenter={{ lat: this.state.mapPosition.lat, lng: this.state.mapPosition.lng }}\n>\n<InfoWindow\nonClose={this.onInfoWindowClose}\nposition={{ lat: (this.state.markerPosition.lat + 0.0018), lng: this.state.markerPosition.lng }}\n>\n\n<span style={{ padding: 0, margin: 0 }}>{this.state.address}\n\n\n<Marker google={this.props.google}\nname={'Dolores park'}\ndraggable={true}\nonDragEnd={this.onMarkerDragEnd}\nposition={{ lat: this.state.markerPosition.lat, lng: this.state.markerPosition.lng }}\n/>\n\n\n\nIMPORTS\nimport React from 'react'\nimport { withGoogleMap, GoogleMap, withScriptjs, InfoWindow, Marker } from \"react-google-maps\";\nimport Autocomplete from 'react-google-autocomplete';\n// import Autocomplete from './MyAutocomplete';\nimport SomeComponent from './SomeComponent'\nimport Geocode from \"react-geocode\";\nSOMECOMPONENT\nimport { useState } from 'react';\nfunction SomeComponent() {\n// Declare a new state variable, which we'll call \"count\"\nconst [count, setCount] = useState(0);\nreturn (\n\nYou clicked {count} times\n{count}\n<button onClick={() => setCount(count + 1)}>\nClick me\n\n\n);\n}\nexport default SomeComponent",
+              "bodyHTML": "<p dir=\"auto\">So in a large class component. I'm trying to render a third party component<br>\nfrom import Autocomplete from 'react-google-autocomplete'</p>\n<ul dir=\"auto\">\n<li>This leverages a Hook, therefore I am unable to render it because the class using it is a CLASS (no hooks allowed in classes). I can not modify this third party Autocomplete component. I linked the exact bug and code.</li>\n</ul>\n<p dir=\"auto\">Code provided to understand</p>\n<ul dir=\"auto\">\n<li>BUG: the actual issue,</li>\n<li>CODE: where the functional component is put in the class,</li>\n<li>IMPORTS: my imports in the class component,</li>\n<li>SOMECOMPONENT: the actual functional component</li>\n</ul>\n<p dir=\"auto\">BUG</p>\n<p dir=\"auto\">Uncaught Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:</p>\n<ol dir=\"auto\">\n<li>You might have mismatching versions of React and the renderer (such as React DOM)</li>\n<li>You might be breaking the Rules of Hooks</li>\n<li>You might have more than one copy of React in the same app</li>\n</ol>\n<p dir=\"auto\">CODE</p>\n<p dir=\"auto\">&lt;GoogleMap google={this.props.google}<br>\ndefaultZoom={this.props.zoom}<br>\ndefaultCenter={{ lat: this.state.mapPosition.lat, lng: this.state.mapPosition.lng }}<br>\n&gt;<br>\n&lt;InfoWindow<br>\nonClose={this.onInfoWindowClose}<br>\nposition={{ lat: (this.state.markerPosition.lat + 0.0018), lng: this.state.markerPosition.lng }}<br>\n&gt;<br>\n</p><div dir=\"auto\"><br>\n&lt;span style={{ padding: 0, margin: 0 }}&gt;{this.state.address}<br>\n</div><br>\n<br>\n&lt;Marker google={this.props.google}<br>\nname={'Dolores park'}<br>\ndraggable={true}<br>\nonDragEnd={this.onMarkerDragEnd}<br>\nposition={{ lat: this.state.markerPosition.lat, lng: this.state.markerPosition.lng }}<br>\n/&gt;<br>\n<br>\n<br>\n<p dir=\"auto\"></p>\n<p dir=\"auto\">IMPORTS</p>\n<p dir=\"auto\">import React from 'react'<br>\nimport { withGoogleMap, GoogleMap, withScriptjs, InfoWindow, Marker } from \"react-google-maps\";<br>\nimport Autocomplete from 'react-google-autocomplete';<br>\n// import Autocomplete from './MyAutocomplete';<br>\nimport SomeComponent from './SomeComponent'<br>\nimport Geocode from \"react-geocode\";</p>\n<p dir=\"auto\">SOMECOMPONENT</p>\n<p dir=\"auto\">import { useState } from 'react';</p>\n<p dir=\"auto\">function SomeComponent() {<br>\n// Declare a new state variable, which we'll call \"count\"<br>\nconst [count, setCount] = useState(0);</p>\n<p dir=\"auto\">return (<br>\n</p><div dir=\"auto\"><br>\n<p dir=\"auto\">You clicked {count} times</p><br>\n{count}<br>\n&lt;button onClick={() =&gt; setCount(count + 1)}&gt;<br>\nClick me<br>\n<br>\n</div><br>\n);<br>\n}<p dir=\"auto\"></p>\n<p dir=\"auto\">export default SomeComponent</p>",
+              "author": {
+                "login": "ZouhirBensm",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/57408221?u=ea35e2abf4f16efb7ad39b1ef4218ac077363f9e&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LXWu0",
+                      "url": "https://github.com/facebook/react/issues/25375#issuecomment-1264413620",
+                      "createdAt": "2022-10-01T16:27:55Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "dgsdfg",
+              "url": "https://github.com/facebook/react/issues/25380",
+              "closedAt": "2022-10-02T12:48:04Z",
+              "id": "I_kwDOAJy2Ks5TETYk",
+              "number": 25380,
+              "createdAt": "2022-10-02T04:23:12Z",
+              "bodyText": "dsgdfsg",
+              "bodyHTML": "<p dir=\"auto\">dsgdfsg</p>",
+              "author": {
+                "login": "LalitPatil1634",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/64311299?u=c5eb5d606adbbfa696e3873ab36d5806a66a3c61&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LYGPq",
+                      "url": "https://github.com/facebook/react/issues/25380#issuecomment-1264608234",
+                      "createdAt": "2022-10-02T10:33:30Z",
+                      "bodyText": "Close  #25380",
+                      "bodyHTML": "<p dir=\"auto\">Close  <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1393636900\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/react/issues/25380\" data-hovercard-type=\"issue\" data-hovercard-url=\"/facebook/react/issues/25380/hovercard\" href=\"https://github.com/facebook/react/issues/25380\">#25380</a></p>",
+                      "author": {
+                        "login": "RaheemAmer",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/18606136?u=ad32001b14ad16e88231fc4af2d82ba2b3881239&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: Error when trying to use @intel/react-pixi package. Expected subtree parent to be a mounted class component. This error is likely caused by a bug in React.",
+              "url": "https://github.com/facebook/react/issues/25382",
+              "closedAt": "2022-10-02T12:47:54Z",
+              "id": "I_kwDOAJy2Ks5TEufx",
+              "number": 25382,
+              "createdAt": "2022-10-02T12:22:28Z",
+              "bodyText": "React version: 18.2.0\nSteps To Reproduce\n\nYarn create vite\nYarn install pixi.js @inlet/react-pixi\nTry this example:\n\nimport { Stage, Sprite } from \"@inlet/react-pixi\";\n\nexport default function App() {\n  return (\n    <div>\n      <Stage width={200} height={200}>\n        <Sprite x={100} y={100} image=\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/693612/IaUrttj.png\"/>\n      </Stage>\n    </div>\n  );\n}\nLink to code example: https://codesandbox.io/s/festive-pike-j8f2pu?file=/src/App.tsx\nThe current behavior\nError\nExpected subtree parent to be a mounted class component. This error is likely caused by a bug in React. Please file an issue.\nThe expected behavior\nA canvas with a sprite in the middle (https://codepen.io/dinopens/pen/QWrrmgx):",
+              "bodyHTML": "<p dir=\"auto\">React version: 18.2.0</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<ol dir=\"auto\">\n<li>Yarn create vite</li>\n<li>Yarn install pixi.js @inlet/react-pixi</li>\n<li>Try this example:</li>\n</ol>\n<div class=\"highlight highlight-source-ts notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"import { Stage, Sprite } from &quot;@inlet/react-pixi&quot;;\n\nexport default function App() {\n  return (\n    &lt;div&gt;\n      &lt;Stage width={200} height={200}&gt;\n        &lt;Sprite x={100} y={100} image=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/693612/IaUrttj.png&quot;/&gt;\n      &lt;/Stage&gt;\n    &lt;/div&gt;\n  );\n}\n\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-kos\">{</span> <span class=\"pl-smi\">Stage</span><span class=\"pl-kos\">,</span> <span class=\"pl-smi\">Sprite</span> <span class=\"pl-kos\">}</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\">\"@inlet/react-pixi\"</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-k\">export</span> <span class=\"pl-k\">default</span> <span class=\"pl-k\">function</span> <span class=\"pl-smi\">App</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-k\">return</span> <span class=\"pl-kos\">(</span>\n    <span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">div</span><span class=\"pl-kos\">&gt;</span>\n      <span class=\"pl-c1\">&lt;</span><span class=\"pl-smi\">Stage</span> <span class=\"pl-smi\">width</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">200</span><span class=\"pl-kos\">}</span> <span class=\"pl-s1\">height</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">200</span><span class=\"pl-kos\">}</span><span class=\"pl-c1\">&gt;</span>\n        <span class=\"pl-c1\">&lt;</span><span class=\"pl-smi\">Sprite</span> <span class=\"pl-s1\">x</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">100</span><span class=\"pl-kos\">}</span> <span class=\"pl-s1\">y</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">100</span><span class=\"pl-kos\">}</span> <span class=\"pl-smi\">image</span><span class=\"pl-c1\">=</span><span class=\"pl-s\">\"https://s3-us-west-2.amazonaws.com/s.cdpn.io/693612/IaUrttj.png\"</span><span class=\"pl-pds\"><span class=\"pl-c1\">/</span>&gt;</span><span class=\"pl-c1\"></span>\n      <span class=\"pl-c1\">&lt;</span><span class=\"pl-pds\"><span class=\"pl-c1\">/</span>Stage&gt;</span>\n<span class=\"pl-pds\">    <span class=\"pl-c1\">&lt;</span><span class=\"pl-c1\">/</span>div</span><span class=\"pl-c1\">&gt;</span><span class=\"pl-s1\"></span>\n  <span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Link to code example: <a href=\"https://codesandbox.io/s/festive-pike-j8f2pu?file=/src/App.tsx\" rel=\"nofollow\">https://codesandbox.io/s/festive-pike-j8f2pu?file=/src/App.tsx</a></p>\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">Error<br>\nExpected subtree parent to be a mounted class component. This error is likely caused by a bug in React. Please file an issue.</p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">A canvas with a sprite in the middle (<a href=\"https://codepen.io/dinopens/pen/QWrrmgx\" rel=\"nofollow\">https://codepen.io/dinopens/pen/QWrrmgx</a>):<br>\n<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://user-images.githubusercontent.com/8447982/193453510-0cb48fd2-8abd-4702-baf1-cad71a01543f.png\"><img src=\"https://user-images.githubusercontent.com/8447982/193453510-0cb48fd2-8abd-4702-baf1-cad71a01543f.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>",
+              "author": {
+                "login": "adnanlah",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/8447982?u=bcbf1e0a35358bf6ed1cb54722cc3977f2dcf2e6&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LYM-H",
+                      "url": "https://github.com/facebook/react/issues/25382#issuecomment-1264635783",
+                      "createdAt": "2022-10-02T12:47:54Z",
+                      "bodyText": "I would suggest filing this against @inlet/react-pixi instead so that they can reduce this to a minimal repro.\nRight now this error seems expected since @inlet/react-pixi has no official support for React 18: It only support ^17.0.1 according to their peerDependencies.\nOnce they have a minimal repro, that's not using 3rd party dependencies and produces the same error, we can revisit.",
+                      "bodyHTML": "<p dir=\"auto\">I would suggest filing this against <code class=\"notranslate\">@inlet/react-pixi</code> instead so that they can reduce this to a minimal repro.<br>\nRight now this error seems expected since <code class=\"notranslate\">@inlet/react-pixi</code> has no official support for React 18: It only support <code class=\"notranslate\">^17.0.1</code> according to their <code class=\"notranslate\">peerDependencies</code>.</p>\n<p dir=\"auto\">Once they have a minimal repro, that's not using 3rd party dependencies and produces the same error, we can revisit.</p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "setState haven't effect inside function applied to ref ",
+              "url": "https://github.com/facebook/react/issues/25425",
+              "closedAt": "2022-10-06T15:13:14Z",
+              "id": "I_kwDOAJy2Ks5TQbvJ",
+              "number": 25425,
+              "createdAt": "2022-10-04T20:39:27Z",
+              "bodyText": "React version:         react: 18.2.0\nSteps To Reproduce\nexport function useCurrent<T extends Record<string,Function>>(fns:T):T{\n  let ref = useRef(fns)\n  for(let key in fns){\n    ref.current[key] = fns[key]\n  }\n  return ref.current\n}\n\nuseCurrent inside a function component\ncall it inside an Effect\n\nI simulated the simplest demo, but this problem cannot be reproduced, please see my picture below after demo.\nLink to code example: https://codepen.io/diqye/pen/BaxPadW\n\n\n\nThe current behavior\n\n\nThe expected behavior\nsetState is always effect",
+              "bodyHTML": "<p dir=\"auto\">React version:         <code class=\"notranslate\">react: 18.2.0</code></p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<div class=\"highlight highlight-source-ts notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"export function useCurrent&lt;T extends Record&lt;string,Function&gt;&gt;(fns:T):T{\n  let ref = useRef(fns)\n  for(let key in fns){\n    ref.current[key] = fns[key]\n  }\n  return ref.current\n}\"><pre><span class=\"pl-k\">export</span> <span class=\"pl-k\">function</span> <span class=\"pl-en\">useCurrent</span><span class=\"pl-c1\">&lt;</span><span class=\"pl-smi\">T</span> <span class=\"pl-k\">extends</span> <span class=\"pl-smi\">Record</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">string</span><span class=\"pl-kos\">,</span><span class=\"pl-smi\">Function</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-c1\">&gt;</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">fns</span>:<span class=\"pl-smi\">T</span><span class=\"pl-kos\">)</span>:<span class=\"pl-smi\">T</span><span class=\"pl-kos\">{</span>\n  <span class=\"pl-k\">let</span> <span class=\"pl-s1\">ref</span> <span class=\"pl-c1\">=</span> <span class=\"pl-en\">useRef</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">fns</span><span class=\"pl-kos\">)</span>\n  <span class=\"pl-k\">for</span><span class=\"pl-kos\">(</span><span class=\"pl-k\">let</span> <span class=\"pl-s1\">key</span> <span class=\"pl-k\">in</span> <span class=\"pl-s1\">fns</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">{</span>\n    <span class=\"pl-s1\">ref</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">current</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">key</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s1\">fns</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">key</span><span class=\"pl-kos\">]</span>\n  <span class=\"pl-kos\">}</span>\n  <span class=\"pl-k\">return</span> <span class=\"pl-s1\">ref</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">current</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<ol dir=\"auto\">\n<li>useCurrent inside a function component</li>\n<li>call it inside an Effect</li>\n</ol>\n<p dir=\"auto\">I simulated the simplest demo, but this problem cannot be reproduced, please see my picture below after demo.<br>\nLink to code example: <a href=\"https://codepen.io/diqye/pen/BaxPadW\" rel=\"nofollow\">https://codepen.io/diqye/pen/BaxPadW</a></p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/34941345/193921081-22a81907-fa46-4f10-883c-ae2ceb386d76.png\"><img width=\"724\" alt=\"image\" src=\"https://user-images.githubusercontent.com/34941345/193921081-22a81907-fa46-4f10-883c-ae2ceb386d76.png\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/34941345/193921550-1a8fa494-6ca5-4876-968d-a443f62fe155.png\"><img width=\"693\" alt=\"image\" src=\"https://user-images.githubusercontent.com/34941345/193921550-1a8fa494-6ca5-4876-968d-a443f62fe155.png\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/34941345/193921786-a25718bd-422a-4f66-98b9-246b8b16493f.png\"><img width=\"891\" alt=\"image\" src=\"https://user-images.githubusercontent.com/34941345/193921786-a25718bd-422a-4f66-98b9-246b8b16493f.png\" style=\"max-width: 100%;\"></a></p>\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/34941345/193922301-38b2a54c-8496-4a39-be54-8cbc3f3ff2b6.png\"><img width=\"772\" alt=\"image\" src=\"https://user-images.githubusercontent.com/34941345/193922301-38b2a54c-8496-4a39-be54-8cbc3f3ff2b6.png\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/34941345/193922553-a6faa245-ac32-4d68-8f98-35f512417f73.png\"><img width=\"973\" alt=\"image\" src=\"https://user-images.githubusercontent.com/34941345/193922553-a6faa245-ac32-4d68-8f98-35f512417f73.png\" style=\"max-width: 100%;\"></a></p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">setState is always effect</p>",
+              "author": {
+                "login": "diqye",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/34941345?u=e5b55daf8c6d2f9302a0be490dcb44e547a95988&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5Ltlbx",
+                      "url": "https://github.com/facebook/react/issues/25425#issuecomment-1270241009",
+                      "createdAt": "2022-10-06T15:12:52Z",
+                      "bodyText": "Now it is work well, I don't know what happened, I only have executed rm -rf .next",
+                      "bodyHTML": "<p dir=\"auto\">Now it is work well, I don't know what happened, I only have executed <code class=\"notranslate\">rm -rf .next</code></p>",
+                      "author": {
+                        "login": "diqye",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/34941345?u=e5b55daf8c6d2f9302a0be490dcb44e547a95988&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LtsYe",
+                      "url": "https://github.com/facebook/react/issues/25425#issuecomment-1270269470",
+                      "createdAt": "2022-10-06T15:28:01Z",
+                      "bodyText": "Now it is work well, I don't know what happened, I only have executed rm -rf .next\n\nIt don't work yet.  working is only on the twice setState",
+                      "bodyHTML": "<blockquote>\n<p dir=\"auto\">Now it is work well, I don't know what happened, I only have executed <code class=\"notranslate\">rm -rf .next</code></p>\n</blockquote>\n<p dir=\"auto\">It don't work yet.  working is only on the twice <code class=\"notranslate\">setState</code></p>",
+                      "author": {
+                        "login": "diqye",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/34941345?u=e5b55daf8c6d2f9302a0be490dcb44e547a95988&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 2,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "[DevTools Bug] Cannot add node \"5370\" because a node with that id is already in the Store.",
+              "url": "https://github.com/facebook/react/issues/25439",
+              "closedAt": "2022-10-06T05:34:02Z",
+              "id": "I_kwDOAJy2Ks5TYF-O",
+              "number": 25439,
+              "createdAt": "2022-10-06T05:33:48Z",
+              "bodyText": "Website or app\n\nRepro steps\n\nHow often does this bug happen?\nEvery time\nDevTools package (automated)\nreact-devtools-extensions\nDevTools version (automated)\n4.25.0-336ac8ceb\nError message (automated)\nCannot add node \"5370\" because a node with that id is already in the Store.\nError call stack (automated)\nat chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:26596:41\n    at bridge_Bridge.emit (chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:24626:22)\n    at chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:24795:14\n    at listener (chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:54959:39)\n\nError component stack (automated)\nNo response\nGitHub query string (automated)\nhttps://api.github.com/search/issues?q=Cannot add node  because a node with that id is already in the Store. in:title is:issue is:open is:public label:\"Component: Developer Tools\" repo:facebook/react",
+              "bodyHTML": "<h3 dir=\"auto\">Website or app</h3>\n<hr>\n<h3 dir=\"auto\">Repro steps</h3>\n<hr>\n<h3 dir=\"auto\">How often does this bug happen?</h3>\n<p dir=\"auto\">Every time</p>\n<h3 dir=\"auto\">DevTools package (automated)</h3>\n<p dir=\"auto\">react-devtools-extensions</p>\n<h3 dir=\"auto\">DevTools version (automated)</h3>\n<p dir=\"auto\">4.25.0-336ac8ceb</p>\n<h3 dir=\"auto\">Error message (automated)</h3>\n<p dir=\"auto\">Cannot add node \"5370\" because a node with that id is already in the Store.</p>\n<h3 dir=\"auto\">Error call stack (automated)</h3>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"at chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:26596:41\n    at bridge_Bridge.emit (chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:24626:22)\n    at chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:24795:14\n    at listener (chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:54959:39)\"><pre lang=\"text\" class=\"notranslate\"><code>at chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:26596:41\n    at bridge_Bridge.emit (chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:24626:22)\n    at chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:24795:14\n    at listener (chrome-extension://fmkadmapgofadopljbjfkapdkoienihi/build/main.js:54959:39)\n</code></pre></div>\n<h3 dir=\"auto\">Error component stack (automated)</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">GitHub query string (automated)</h3>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"https://api.github.com/search/issues?q=Cannot add node  because a node with that id is already in the Store. in:title is:issue is:open is:public label:&quot;Component: Developer Tools&quot; repo:facebook/react\"><pre lang=\"text\" class=\"notranslate\"><code>https://api.github.com/search/issues?q=Cannot add node  because a node with that id is already in the Store. in:title is:issue is:open is:public label:\"Component: Developer Tools\" repo:facebook/react\n</code></pre></div>",
+              "author": {
+                "login": "YuvarajPandiyan",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/42289615?u=abde52e7cad2924ed0712c0c810e34a0f177ce15&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LqKFj",
+                      "url": "https://github.com/facebook/react/issues/25439#issuecomment-1269342563",
+                      "createdAt": "2022-10-06T05:34:01Z",
+                      "bodyText": "@YuvarajPandiyan: We're sorry you've seen this error. ❤️\nIt looks like you forgot to specify a valid URL. (This means that we will not be able to reproduce the problem you're reporting.)\nPlease help us by providing a link to a CodeSandbox (https://codesandbox.io/s/new), a repository on GitHub, or a minimal code example that reproduces the problem. (Screenshots or videos can also be helpful if they help provide context on how to repro the bug.)\nHere are some tips for providing a minimal example: https://stackoverflow.com/help/mcve\nIssues without repros are automatically closed but we will re-open if you update with repro info.",
+                      "bodyHTML": "<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/YuvarajPandiyan/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/YuvarajPandiyan\">@YuvarajPandiyan</a>: We're sorry you've seen this error. <g-emoji class=\"g-emoji\" alias=\"heart\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/2764.png\">❤️</g-emoji></p>\n<p dir=\"auto\">It looks like you forgot to specify a valid URL. (This means that we will not be able to reproduce the problem you're reporting.)</p>\n<p dir=\"auto\">Please help us by providing a link to a CodeSandbox (<a href=\"https://codesandbox.io/s/new\" rel=\"nofollow\">https://codesandbox.io/s/new</a>), a repository on GitHub, or a minimal code example that reproduces the problem. (Screenshots or videos can also be helpful if they help provide context on how to repro the bug.)</p>\n<p dir=\"auto\">Here are some tips for providing a minimal example: <a href=\"https://stackoverflow.com/help/mcve\" rel=\"nofollow\">https://stackoverflow.com/help/mcve</a></p>\n<p dir=\"auto\">Issues without repros are automatically closed but we will re-open if you update with repro info.</p>",
+                      "author": {
+                        "login": "github-actions",
+                        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4",
+                        "__typename": "Bot"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Type: Bug",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Needs More Information",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Component: Developer Tools",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: React.memo and generics won't work",
+              "url": "https://github.com/facebook/react/issues/25444",
+              "closedAt": "2022-10-07T08:21:46Z",
+              "id": "I_kwDOAJy2Ks5TfP37",
+              "number": 25444,
+              "createdAt": "2022-10-07T06:47:01Z",
+              "bodyText": "When using React.memo and generics in Typescript, there is an issue with props, at-least for me, when providing a function in props.\nReact version: 18.2.0\nSteps To Reproduce\n\nTypescript will complain for props types immediately when compiling Typescript\n\nLink to code example:\nhttps://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAJQKYEMDG8BmUIjgcilQ3wG4Aoc4AOxiSk3STgEkB5MGYCagHgBUAfHADe5OBLhEUAEx4AbAJ5wAbinkBXJAC44-CpKmo51JXHkoARknm6AzjCg0A5hQC+lGnQZNWABRwwOwFhMUNpEzMuGHkdOAcnaldxSQiFZQhObmo7XXYsnhCAbQBdA1TjdPibJAwkGQ4uHl19FIk00wzqAGUajEbs3QAKNU04-gBKOABeYRUIYBl3SjQeBzgAMWB5bwA1YCQAdxm4AQAaQSGwQNzEYhgAOgDMuwB1YBgACwBhT+2ZIh8FjPIIhQRTWaiNpGGAaKDUOBDaGGXgyYAqQTIwySXifACsghE1xeD2isTcvAA9PjMVjsaJiUEHpkmjkHiAUGAhkMWdkznAaDIkAAPCHCJH0yU4ywaGAwHh0qXYgDWSEU0xEgpFHiVurgMEUYCQ0wARDK5TwTYq9XAeN95MA0MqNUMxXBGXZmT0+jABjweQVqA9RloJjqbZJMRHJSJeTwHhZrPJw9Gqeb5dQo3qJmHFVS0RjoRN3BQVmt4FsdvR9kcAKLCyCweonZDoR4gJAgCBDSt7A6HYueWj0RhoZjAm4AJhCUPClU6+o+sXsjhc5Xa87McZyeT9fCEpXXRlkVTsPvqe5aR46W+9sX6geGIfGbvmi2W5FWOQr228J3OlwerorYYE8NzvF8vz-ICvATi805COCMzitCvC9tW-b1o2dAyIqZLGkSNykkuSApti252BqHrMoGdhkYYZ73jhe5UURjG1Mxgb0ZIPC9ExLGESSvE+nubhwJSlJwGwyooIo0KUpig5AA\nThe current behavior\nTypescript complain about function in props\nThe expected behavior\nShould not complain\nManual fix\nCan be fixed if doing:\ndeclare module \"react\" { // augment React types\n    function memo<A, B>(Component: (props: A) => B): (props: A) => React.ReactElement | null\n    // return type is same as ReturnType<ExoticComponent<any>>\n}",
+              "bodyHTML": "<p dir=\"auto\">When using <code class=\"notranslate\">React.memo</code> and generics in Typescript, there is an issue with props, at-least for me, when providing a function in props.</p>\n<p dir=\"auto\">React version: 18.2.0</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<ol dir=\"auto\">\n<li>Typescript will complain for props types immediately when compiling Typescript</li>\n</ol>\n<p dir=\"auto\">Link to code example:<br>\n<a href=\"https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAJQKYEMDG8BmUIjgcilQ3wG4Aoc4AOxiSk3STgEkB5MGYCagHgBUAfHADe5OBLhEUAEx4AbAJ5wAbinkBXJAC44-CpKmo51JXHkoARknm6AzjCg0A5hQC+lGnQZNWABRwwOwFhMUNpEzMuGHkdOAcnaldxSQiFZQhObmo7XXYsnhCAbQBdA1TjdPibJAwkGQ4uHl19FIk00wzqAGUajEbs3QAKNU04-gBKOABeYRUIYBl3SjQeBzgAMWB5bwA1YCQAdxm4AQAaQSGwQNzEYhgAOgDMuwB1YBgACwBhT+2ZIh8FjPIIhQRTWaiNpGGAaKDUOBDaGGXgyYAqQTIwySXifACsghE1xeD2isTcvAA9PjMVjsaJiUEHpkmjkHiAUGAhkMWdkznAaDIkAAPCHCJH0yU4ywaGAwHh0qXYgDWSEU0xEgpFHiVurgMEUYCQ0wARDK5TwTYq9XAeN95MA0MqNUMxXBGXZmT0+jABjweQVqA9RloJjqbZJMRHJSJeTwHhZrPJw9Gqeb5dQo3qJmHFVS0RjoRN3BQVmt4FsdvR9kcAKLCyCweonZDoR4gJAgCBDSt7A6HYueWj0RhoZjAm4AJhCUPClU6+o+sXsjhc5Xa87McZyeT9fCEpXXRlkVTsPvqe5aR46W+9sX6geGIfGbvmi2W5FWOQr228J3OlwerorYYE8NzvF8vz-ICvATi805COCMzitCvC9tW-b1o2dAyIqZLGkSNykkuSApti252BqHrMoGdhkYYZ73jhe5UURjG1Mxgb0ZIPC9ExLGESSvE+nubhwJSlJwGwyooIo0KUpig5AA\" rel=\"nofollow\">https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBAJQKYEMDG8BmUIjgcilQ3wG4Aoc4AOxiSk3STgEkB5MGYCagHgBUAfHADe5OBLhEUAEx4AbAJ5wAbinkBXJAC44-CpKmo51JXHkoARknm6AzjCg0A5hQC+lGnQZNWABRwwOwFhMUNpEzMuGHkdOAcnaldxSQiFZQhObmo7XXYsnhCAbQBdA1TjdPibJAwkGQ4uHl19FIk00wzqAGUajEbs3QAKNU04-gBKOABeYRUIYBl3SjQeBzgAMWB5bwA1YCQAdxm4AQAaQSGwQNzEYhgAOgDMuwB1YBgACwBhT+2ZIh8FjPIIhQRTWaiNpGGAaKDUOBDaGGXgyYAqQTIwySXifACsghE1xeD2isTcvAA9PjMVjsaJiUEHpkmjkHiAUGAhkMWdkznAaDIkAAPCHCJH0yU4ywaGAwHh0qXYgDWSEU0xEgpFHiVurgMEUYCQ0wARDK5TwTYq9XAeN95MA0MqNUMxXBGXZmT0+jABjweQVqA9RloJjqbZJMRHJSJeTwHhZrPJw9Gqeb5dQo3qJmHFVS0RjoRN3BQVmt4FsdvR9kcAKLCyCweonZDoR4gJAgCBDSt7A6HYueWj0RhoZjAm4AJhCUPClU6+o+sXsjhc5Xa87McZyeT9fCEpXXRlkVTsPvqe5aR46W+9sX6geGIfGbvmi2W5FWOQr228J3OlwerorYYE8NzvF8vz-ICvATi805COCMzitCvC9tW-b1o2dAyIqZLGkSNykkuSApti252BqHrMoGdhkYYZ73jhe5UURjG1Mxgb0ZIPC9ExLGESSvE+nubhwJSlJwGwyooIo0KUpig5AA</a></p>\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">Typescript complain about function in props</p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">Should not complain</p>\n<h2 dir=\"auto\">Manual fix</h2>\n<p dir=\"auto\">Can be fixed if doing:</p>\n<div class=\"highlight highlight-source-ts notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"declare module &quot;react&quot; { // augment React types\n    function memo&lt;A, B&gt;(Component: (props: A) =&gt; B): (props: A) =&gt; React.ReactElement | null\n    // return type is same as ReturnType&lt;ExoticComponent&lt;any&gt;&gt;\n}\"><pre><span class=\"pl-k\">declare</span> module <span class=\"pl-s\">\"react\"</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c\">// augment React types</span>\n    <span class=\"pl-k\">function</span> <span class=\"pl-s1\">memo</span><span class=\"pl-c1\">&lt;</span><span class=\"pl-smi\">A</span><span class=\"pl-kos\">,</span> <span class=\"pl-smi\">B</span><span class=\"pl-c1\">&gt;</span><span class=\"pl-kos\">(</span><span class=\"pl-smi\">Component</span>: <span class=\"pl-kos\">(</span><span class=\"pl-s1\">props</span>: <span class=\"pl-smi\">A</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-smi\">B</span><span class=\"pl-kos\">)</span>: <span class=\"pl-kos\">(</span><span class=\"pl-s1\">props</span>: <span class=\"pl-smi\">A</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-smi\">React</span><span class=\"pl-kos\">.</span><span class=\"pl-smi\">ReactElement</span> <span class=\"pl-c1\">|</span> <span class=\"pl-c1\">null</span>\n    <span class=\"pl-c\">// return type is same as ReturnType&lt;ExoticComponent&lt;any&gt;&gt;</span>\n<span class=\"pl-kos\">}</span></pre></div>",
+              "author": {
+                "login": "tal-rofe",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/100444463?u=7d2436b5339b019ff17c0b4efe83e235c920f7dc&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5LxiUS",
+                      "url": "https://github.com/facebook/react/issues/25444#issuecomment-1271276818",
+                      "createdAt": "2022-10-07T08:21:46Z",
+                      "bodyText": "Please file typing issues in https://github.com/DefinitelyTyped/DefinitelyTyped where they are maintained.",
+                      "bodyHTML": "<p dir=\"auto\">Please file typing issues in <a href=\"https://github.com/DefinitelyTyped/DefinitelyTyped\">https://github.com/DefinitelyTyped/DefinitelyTyped</a> where they are maintained.</p>",
+                      "author": {
+                        "login": "gaearon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/810438?u=36b11d1db9c2380295b4371a98de87ab6b4c898f&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: Issue with absolute imports in react application with bootsraped project",
+              "url": "https://github.com/facebook/react/issues/25450",
+              "closedAt": "2022-10-08T11:21:44Z",
+              "id": "I_kwDOAJy2Ks5TjzJR",
+              "number": 25450,
+              "createdAt": "2022-10-08T09:54:57Z",
+              "bodyText": "React version: 18.2.0\nThere is an issue with the way absolute imports are handled in project bootstraped with create-react-app version 5.0.1\nI configured correctly the absolute imports according to the CRA docs. Some of the absolute imports works, some of them don't\nI have created a reproducible demo of the issue available on this link\nSteps To Reproduce\nClone the repository of this link and please follow the next steps :\n\nRun yarn install\nRun yarn start\n\nYou will see the following error in your browser Module not found: Error: Can't resolve '@/utils'\nI have written a small documentation on the README.md of the reproducible issue repo to add some important details\n\nLink to code example:\nhttps://github.com/Vikmanatus/reactjs-absolute-imports-issue\n\nThe current behavior\nAn error is thrown saying that @/utils cannot be resolved\nThe expected behavior\nThe import of the makeId function of this repo should work with the following absolute import:\nimport { makeid } from \"@/utils\";       // Throws an error\nThe strange thing is that the compiler throws an error when it imports the function but accepts the absolute import of a type 🤔\nimport { FakeObjectType } from \"@/types\";   // No error",
+              "bodyHTML": "\n<p dir=\"auto\">React version: 18.2.0</p>\n<p dir=\"auto\">There is an issue with the way absolute imports are handled in project bootstraped with <code class=\"notranslate\">create-react-app</code> version <code class=\"notranslate\">5.0.1</code><br>\nI configured correctly the absolute imports according to the CRA <a href=\"https://create-react-app.dev/docs/importing-a-component/#absolute-imports\" rel=\"nofollow\">docs</a>. Some of the absolute imports works, some of them don't<br>\nI have created a reproducible demo of the issue available on this <a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">link</a></p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<p dir=\"auto\">Clone the repository of this <a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">link</a> and please follow the next steps :</p>\n<ol dir=\"auto\">\n<li>Run <code class=\"notranslate\">yarn install</code></li>\n<li>Run <code class=\"notranslate\">yarn start</code></li>\n</ol>\n<p dir=\"auto\">You will see the following error in your browser <code class=\"notranslate\">Module not found: Error: Can't resolve '@/utils'</code></p>\n<p dir=\"auto\">I have written a small documentation on the <code class=\"notranslate\">README.md</code> of the reproducible issue repo to add some important details</p>\n\n<p dir=\"auto\">Link to code example:</p>\n<p dir=\"auto\"><a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">https://github.com/Vikmanatus/reactjs-absolute-imports-issue</a></p>\n\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">An error is thrown saying that <code class=\"notranslate\">@/utils</code> cannot be resolved</p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">The import of the <code class=\"notranslate\">makeId</code> function of this <a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">repo</a> should work with the following absolute import:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"import { makeid } from &quot;@/utils&quot;;       // Throws an error\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-kos\">{</span> <span class=\"pl-s1\">makeid</span> <span class=\"pl-kos\">}</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\">\"@/utils\"</span><span class=\"pl-kos\">;</span>       <span class=\"pl-c\">// Throws an error</span></pre></div>\n<p dir=\"auto\">The strange thing is that the compiler throws an error when it imports the function but accepts the absolute import of a type <g-emoji class=\"g-emoji\" alias=\"thinking\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f914.png\">🤔</g-emoji></p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"import { FakeObjectType } from &quot;@/types&quot;;   // No error\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-kos\">{</span> <span class=\"pl-v\">FakeObjectType</span> <span class=\"pl-kos\">}</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\">\"@/types\"</span><span class=\"pl-kos\">;</span>   <span class=\"pl-c\">// No error</span></pre></div>",
+              "author": {
+                "login": "Vikmanatus",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/46979303?u=521ad182a23e57d682b6098e619d49e742479e60&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1bPr",
+                      "url": "https://github.com/facebook/react/issues/25450#issuecomment-1272296427",
+                      "createdAt": "2022-10-08T11:21:44Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 1,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: Issue with absolute imports in react application",
+              "url": "https://github.com/facebook/react/issues/25451",
+              "closedAt": "2022-10-08T12:03:08Z",
+              "id": "I_kwDOAJy2Ks5Tj6eX",
+              "number": 25451,
+              "createdAt": "2022-10-08T11:57:51Z",
+              "bodyText": "React version: 18.2.0\nThere seems to be an issue with the way that absolute imports are being handled in react 18. Even with a properly configured tsconfig.json, some of the absolute imports works but some of them don't (see section The expected behavior).\nFor example, I am able to do an absolute import on a type, but the demo crashes when I try to import a function the same way\nI have opened this issue because I cannot figure out if the issue is coming from create-react-app or the react official repository.\nI have created a reproducible demo available on this link\nSteps To Reproduce\nClone the repository of this link and please follow the next steps :\n\nRun yarn install\nRun yarn start\n\nYou will see the following error in your browser Module not found: Error: Can't resolve '@/utils'\nI have written a small documentation on the README.md of the reproducible issue repo to add some important details\n\nLink to code example:\nhttps://github.com/Vikmanatus/reactjs-absolute-imports-issue\n\nThe current behavior\nAn error is thrown saying that @/utils cannot be resolved\nModule not found: Error: Can't resolve '@/utils' in '/Users/someUser/Desktop/SomeFolder/reactjs-absolute-imports-issue/src'\nThe expected behavior\nThe import of the makeId function of this repo should work with the following absolute import:\nimport { makeid } from \"@/utils\";       // Throws an error\nThe strange thing is that the compiler throws an error when it imports the function but accepts the absolute import of a type 🤔\nimport { FakeObjectType } from \"@/types\";   // No error",
+              "bodyHTML": "\n<p dir=\"auto\">React version: 18.2.0</p>\n<p dir=\"auto\">There seems to be an issue with the way that absolute imports are being handled in react 18. Even with a properly configured <code class=\"notranslate\">tsconfig.json</code>, some of the absolute imports works but some of them don't (see section The expected behavior).<br>\nFor example, I am able to do an absolute import on a type, but the demo crashes when I try to import a function the same way</p>\n<p dir=\"auto\">I have opened this issue because I cannot figure out if the issue is coming from create-react-app or the react official repository.</p>\n<p dir=\"auto\">I have created a reproducible demo available on this <a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">link</a></p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<p dir=\"auto\">Clone the repository of this <a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">link</a> and please follow the next steps :</p>\n<ol dir=\"auto\">\n<li>Run yarn install</li>\n<li>Run yarn start</li>\n</ol>\n<p dir=\"auto\">You will see the following error in your browser Module not found: Error: Can't resolve '@/utils'</p>\n<p dir=\"auto\">I have written a small documentation on the README.md of the reproducible issue repo to add some important details</p>\n\n<p dir=\"auto\">Link to code example:</p>\n<p dir=\"auto\"><a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">https://github.com/Vikmanatus/reactjs-absolute-imports-issue</a></p>\n\n<h2 dir=\"auto\">The current behavior</h2>\n<p dir=\"auto\">An error is thrown saying that @/utils cannot be resolved</p>\n<p dir=\"auto\"><code class=\"notranslate\">Module not found: Error: Can't resolve '@/utils' in '/Users/someUser/Desktop/SomeFolder/reactjs-absolute-imports-issue/src'</code></p>\n<h2 dir=\"auto\">The expected behavior</h2>\n<p dir=\"auto\">The import of the <code class=\"notranslate\">makeId</code> function of this <a href=\"https://github.com/Vikmanatus/reactjs-absolute-imports-issue\">repo</a> should work with the following absolute import:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"import { makeid } from &quot;@/utils&quot;;       // Throws an error\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-kos\">{</span> <span class=\"pl-s1\">makeid</span> <span class=\"pl-kos\">}</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\">\"@/utils\"</span><span class=\"pl-kos\">;</span>       <span class=\"pl-c\">// Throws an error</span></pre></div>\n<p dir=\"auto\">The strange thing is that the compiler throws an error when it imports the function but accepts the absolute import of a type <g-emoji class=\"g-emoji\" alias=\"thinking\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f914.png\">🤔</g-emoji></p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"import { FakeObjectType } from &quot;@/types&quot;;   // No error\"><pre><span class=\"pl-k\">import</span> <span class=\"pl-kos\">{</span> <span class=\"pl-v\">FakeObjectType</span> <span class=\"pl-kos\">}</span> <span class=\"pl-k\">from</span> <span class=\"pl-s\">\"@/types\"</span><span class=\"pl-kos\">;</span>   <span class=\"pl-c\">// No error</span></pre></div>",
+              "author": {
+                "login": "Vikmanatus",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/46979303?u=521ad182a23e57d682b6098e619d49e742479e60&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1c9V",
+                      "url": "https://github.com/facebook/react/issues/25451#issuecomment-1272303445",
+                      "createdAt": "2022-10-08T12:03:08Z",
+                      "bodyText": "Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:\nCoding Questions\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.\nhttps://stackoverflow.com/questions/tagged/react\nTalk to other React developers\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.\nhttps://reactjs.org/community/support.html",
+                      "bodyHTML": "<p dir=\"auto\">Support requests filed as GitHub issues often go unanswered. We want you to find the answer you're looking for, so we suggest the following alternatives:</p>\n<p dir=\"auto\">Coding Questions<br>\nIf you have a coding question related to React and React DOM, it might be better suited for Stack Overflow. It's a great place to browse through frequent questions about using React, as well as ask for help with specific questions.</p>\n<p dir=\"auto\"><a href=\"https://stackoverflow.com/questions/tagged/react\" rel=\"nofollow\">https://stackoverflow.com/questions/tagged/react</a></p>\n<p dir=\"auto\">Talk to other React developers<br>\nThere are many online forums which are a great place for discussion about best practices and application architecture as well as the future of React.</p>\n<p dir=\"auto\"><a href=\"https://reactjs.org/community/support.html\" rel=\"nofollow\">https://reactjs.org/community/support.html</a></p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1dlU",
+                      "url": "https://github.com/facebook/react/issues/25451#issuecomment-1272306004",
+                      "createdAt": "2022-10-08T12:18:00Z",
+                      "bodyText": "Hello @eps1lon\nThank you very much for your quick reply\nI think there is misunderstanding, the issue reported is not a support request, it is indeed an issue\nI have found a list of similar issues and tried all the solution suggested and we seem to have mostly all the same issue\n\nhttps://stackoverflow.com/questions/68416916/create-react-app-absolute-imports-dont-work-with-yarn-v2-workspaces-typescrip\nfacebook/create-react-app#11976\nhttps://sta ckoverflow.com/questions/72132090/absolute-imports-issue-in-react-with-typescript\nhttps://stackoverflow.com/questions/72017719/absolute-imports-arent-working-in-reactjs\nhttps://stackoverflow.com/questions/73370209/absolute-path-not-working-for-create-react-app-with-typescript\n\nReact-Typescript support's the absolute imports by default, I have the same import system implemented in many React.js projects built on React v.17 who are still working very well\nBut it really seem's that since React v.18 release there is this issue going on, I am able to reproduce it with every new react project created with React v.18\nAre you able to reproduce the issue with the reproducible demo given ?",
+                      "bodyHTML": "<p dir=\"auto\">Hello <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eps1lon/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eps1lon\">@eps1lon</a></p>\n<p dir=\"auto\">Thank you very much for your quick reply</p>\n<p dir=\"auto\">I think there is misunderstanding, the issue reported is not a support request, it is indeed an issue</p>\n<p dir=\"auto\">I have found a list of similar issues and tried all the solution suggested and we seem to have mostly all the same issue</p>\n<ul dir=\"auto\">\n<li><a href=\"https://stackoverflow.com/questions/68416916/create-react-app-absolute-imports-dont-work-with-yarn-v2-workspaces-typescrip\" rel=\"nofollow\">https://stackoverflow.com/questions/68416916/create-react-app-absolute-imports-dont-work-with-yarn-v2-workspaces-typescrip</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1111583506\" data-permission-text=\"Title is private\" data-url=\"https://github.com/facebook/create-react-app/issues/11976\" data-hovercard-type=\"issue\" data-hovercard-url=\"/facebook/create-react-app/issues/11976/hovercard\" href=\"https://github.com/facebook/create-react-app/issues/11976\">facebook/create-react-app#11976</a></li>\n<li><a href=\"https://sta\" rel=\"nofollow\">https://sta</a> ckoverflow.com/questions/72132090/absolute-imports-issue-in-react-with-typescript</li>\n<li><a href=\"https://stackoverflow.com/questions/72017719/absolute-imports-arent-working-in-reactjs\" rel=\"nofollow\">https://stackoverflow.com/questions/72017719/absolute-imports-arent-working-in-reactjs</a></li>\n<li><a href=\"https://stackoverflow.com/questions/73370209/absolute-path-not-working-for-create-react-app-with-typescript\" rel=\"nofollow\">https://stackoverflow.com/questions/73370209/absolute-path-not-working-for-create-react-app-with-typescript</a></li>\n</ul>\n<p dir=\"auto\">React-Typescript support's the absolute imports by default, I have the same import system implemented in many React.js projects built on React v.17 who are still working very well</p>\n<p dir=\"auto\">But it really seem's that since React v.18 release there is this issue going on, I am able to reproduce it with every new react project created with React v.18</p>\n<p dir=\"auto\">Are you able to reproduce the issue with the reproducible demo given ?</p>",
+                      "author": {
+                        "login": "Vikmanatus",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/46979303?u=521ad182a23e57d682b6098e619d49e742479e60&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1hRG",
+                      "url": "https://github.com/facebook/react/issues/25451#issuecomment-1272321094",
+                      "createdAt": "2022-10-08T13:32:23Z",
+                      "bodyText": "It's highly unlikely that something related to resolving imports is caused by react. It's very likely handled by the framework you're using when bundling the application. If you're using Create React App, you should file the issue against facebook/create-react-app instead. I still believe this is a configuration issue that should be solved via support channels and not an issue with the framework since Create React App does have support for absolute paths.",
+                      "bodyHTML": "<p dir=\"auto\">It's highly unlikely that something related to resolving imports is caused by <code class=\"notranslate\">react</code>. It's very likely handled by the framework you're using when bundling the application. If you're using Create React App, you should file the issue against <a href=\"https://github.com/facebook/create-react-app\">facebook/create-react-app</a> instead. I still believe this is a configuration issue that should be solved via support channels and not an issue with the framework since Create React App does have support for absolute paths.</p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1hZr",
+                      "url": "https://github.com/facebook/react/issues/25451#issuecomment-1272321643",
+                      "createdAt": "2022-10-08T13:34:25Z",
+                      "bodyText": "I would also recommend reading through https://stackoverflow.com/help/minimal-reproducible-example to ensure support requests can be answered as best as possible (e.g. you're not including the error message in your description).",
+                      "bodyHTML": "<p dir=\"auto\">I would also recommend reading through <a href=\"https://stackoverflow.com/help/minimal-reproducible-example\" rel=\"nofollow\">https://stackoverflow.com/help/minimal-reproducible-example</a> to ensure support requests can be answered as best as possible (e.g. you're not including the error message in your description).</p>",
+                      "author": {
+                        "login": "eps1lon",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/12292047?u=d1523888bc16deb2ce9f5294e4849d1a2f02270c&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L1iHc",
+                      "url": "https://github.com/facebook/react/issues/25451#issuecomment-1272324572",
+                      "createdAt": "2022-10-08T13:48:05Z",
+                      "bodyText": "Thank you very much for your response @eps1lon\nMy bad, I apologize, I did forgot to paste the output of the error, I have updated the section\nI wish this was a configuration issue, but the problem is that some absolute imports works on new projects generated with CRA (e.g.: I am able to import a type with an absolute import) but some of them don't (e.g.: the import of a function breaks the application). Also I have been able to reproduce it on three new CRA project with the typescript template 🙁\nI wasn't sure on which side I was supposed to create the thread, thank you very much for your answer\nI have already opened a stack overflow thread on this subject, I'll open an issue on create-react-app repository\nThank you very much for your help and have a great day 🙂\nBest regards",
+                      "bodyHTML": "<p dir=\"auto\">Thank you very much for your response <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eps1lon/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eps1lon\">@eps1lon</a></p>\n<p dir=\"auto\">My bad, I apologize, I did forgot to paste the output of the error, I have updated the section</p>\n<p dir=\"auto\">I wish this was a configuration issue, but the problem is that some absolute imports works on new projects generated with <code class=\"notranslate\">CRA</code> (e.g.: I am able to import a type with an absolute import) but some of them don't (e.g.: the import of a function breaks the application). Also I have been able to reproduce it on three new <code class=\"notranslate\">CRA</code> project with the typescript template <g-emoji class=\"g-emoji\" alias=\"slightly_frowning_face\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f641.png\">🙁</g-emoji></p>\n<p dir=\"auto\">I wasn't sure on which side I was supposed to create the thread, thank you very much for your answer</p>\n<p dir=\"auto\">I have already opened a stack overflow thread on this subject, I'll open an issue on <code class=\"notranslate\">create-react-app</code> repository</p>\n<p dir=\"auto\">Thank you very much for your help and have a great day <g-emoji class=\"g-emoji\" alias=\"slightly_smiling_face\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f642.png\">🙂</g-emoji></p>\n<p dir=\"auto\">Best regards</p>",
+                      "author": {
+                        "login": "Vikmanatus",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/46979303?u=521ad182a23e57d682b6098e619d49e742479e60&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 5,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  },
+                  {
+                    "node": {
+                      "name": "Resolution: Support Redirect",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          },
+          {
+            "node": {
+              "title": "Bug: use-sync-external-store not compatible with skypack",
+              "url": "https://github.com/facebook/react/issues/25463",
+              "closedAt": "2022-10-11T12:59:18Z",
+              "id": "I_kwDOAJy2Ks5Tt-bV",
+              "number": 25463,
+              "createdAt": "2022-10-11T12:32:04Z",
+              "bodyText": "React version: N/A\nSteps To Reproduce\n<script type=\"module\">\n  import { useSyncExternalStore } from \"https://cdn.skypack.dev/use-sync-external-store@1.2.0\";\n  console.log(useSyncExternalStore); //=> undefined\n</script>\n\n\nLink to code example:\n\nThe current behavior\nThe expected behavior",
+              "bodyHTML": "\n<p dir=\"auto\">React version: N/A</p>\n<h2 dir=\"auto\">Steps To Reproduce</h2>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"&lt;script type=&quot;module&quot;&gt;\n  import { useSyncExternalStore } from &quot;https://cdn.skypack.dev/use-sync-external-store@1.2.0&quot;;\n  console.log(useSyncExternalStore); //=&gt; undefined\n&lt;/script&gt;\"><pre class=\"notranslate\"><code>&lt;script type=\"module\"&gt;\n  import { useSyncExternalStore } from \"https://cdn.skypack.dev/use-sync-external-store@1.2.0\";\n  console.log(useSyncExternalStore); //=&gt; undefined\n&lt;/script&gt;\n</code></pre></div>\n\n<p dir=\"auto\">Link to code example:</p>\n\n<h2 dir=\"auto\">The current behavior</h2>\n<h2 dir=\"auto\">The expected behavior</h2>",
+              "author": {
+                "login": "quinn",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/3764?u=4ba6bcc4d27907c3ee8fc01331e521e7c7330368&v=4",
+                "__typename": "User"
+              },
+              "comments": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L-WPD",
+                      "url": "https://github.com/facebook/react/issues/25463#issuecomment-1274635203",
+                      "createdAt": "2022-10-11T12:47:30Z",
+                      "bodyText": "I believe it's a problem in Skypack, btw I think Skypack is dead, try esm.sh instead",
+                      "bodyHTML": "<p dir=\"auto\">I believe it's a problem in Skypack, btw I think Skypack is dead, try <a href=\"https://esm.sh/\" rel=\"nofollow\">esm.sh</a> instead</p>",
+                      "author": {
+                        "login": "nihgwu",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/2595058?v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  },
+                  {
+                    "node": {
+                      "id": "IC_kwDOAJy2Ks5L-aAM",
+                      "url": "https://github.com/facebook/react/issues/25463#issuecomment-1274650636",
+                      "createdAt": "2022-10-11T12:59:18Z",
+                      "bodyText": "@nihgwu esm.sh worked, nice! I didn't think to try a different host, didn't realize there was that much nuance with these package CDNs. thank you.",
+                      "bodyHTML": "<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nihgwu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nihgwu\">@nihgwu</a> esm.sh worked, nice! I didn't think to try a different host, didn't realize there was that much nuance with these package CDNs. thank you.</p>",
+                      "author": {
+                        "login": "quinn",
+                        "avatarUrl": "https://avatars.githubusercontent.com/u/3764?u=4ba6bcc4d27907c3ee8fc01331e521e7c7330368&v=4",
+                        "__typename": "User"
+                      },
+                      "__typename": "IssueComment"
+                    },
+                    "__typename": "IssueCommentEdge"
+                  }
+                ],
+                "totalCount": 2,
+                "__typename": "IssueCommentConnection"
+              },
+              "labels": {
+                "edges": [
+                  {
+                    "node": {
+                      "name": "Status: Unconfirmed",
+                      "__typename": "Label"
+                    },
+                    "__typename": "LabelEdge"
+                  }
+                ],
+                "__typename": "LabelConnection"
+              },
+              "__typename": "Issue"
+            },
+            "__typename": "IssueEdge"
+          }
+        ],
+        "totalCount": 10950,
+        "__typename": "IssueConnection"
+      },
+      "__typename": "Repository"
+    }
+  }
+}
