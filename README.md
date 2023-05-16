@@ -44,9 +44,6 @@ management.
 
 In the project directory, you should run:
 
-### `npm install` (in terminal)
-To install project dependencies
-
 ### `npm install`
 
 Installs the app dependencies 
