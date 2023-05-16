@@ -1,4 +1,4 @@
-# Coding challenge solution
+# GitHub issues viewer app
 By Samuel Umeh
 
 This project is just a solution to a coding challenge for a Frontend Position.

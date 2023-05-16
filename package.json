@@ -1,5 +1,5 @@
 {
-  "name": "mediamarkt-saturn-challenge",
+  "name": "github-issues-viewer-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -54,5 +54,5 @@
     "redux-devtools-extension": "^2.13.9",
     "sass": "1.51.0"
   },
-  "keywords": ["react", "apollo", "graphql", "typescript", "redux"]
+  "keywords": ["react", "apollo", "graphql", "typescript", "redux", "emotion"]
 }
