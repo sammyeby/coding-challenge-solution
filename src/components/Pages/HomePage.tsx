@@ -13,7 +13,7 @@ const HomePage = () => {
     return (
         <Box className="inner-content" sx={{my: 4, padding: '10px'}}>
             <Typography variant="h3" gutterBottom>
-                MediaMarktSaturn
+                Random-Company
             </Typography>
             <Typography variant="h5" sx={{mb: 3}}>Technology</Typography>
             <Typography variant="h6" sx={{mb: 3, textAlign: 'center'}} gutterBottom>

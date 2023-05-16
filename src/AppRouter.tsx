@@ -14,7 +14,7 @@ const routes: IRoute[] = [
     {
         path: '/',
         element: <HomePage />,
-        displayName: 'MediaMarkt Coding challenge'
+        displayName: 'R-C Coding challenge'
     },
     {
         path: '/issues',

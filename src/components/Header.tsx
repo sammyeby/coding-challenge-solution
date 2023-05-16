@@ -1,6 +1,5 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { ReactComponent as MediaMarktLogo } from 'assets/images/Media_Markt_logo.svg';
 
 
 const Header = () => {
@@ -13,7 +12,13 @@ const Header = () => {
     return (
         <AppBar component="header" style={{backgroundColor: 'rgb(223, 0, 0)'}}>
             <Toolbar className="inner-content">
-                <MediaMarktLogo height={55} width={168} onClick={goToHome} style={{cursor: 'pointer'}} />
+                <Typography
+                    variant="h3"
+                    style={{height: '55px', cursor: 'pointer'}}
+                    onClick={goToHome}
+                >
+                    R-C
+                </Typography>
                 <Typography
                     variant="h5"
                     component="div"
